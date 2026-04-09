@@ -1,0 +1,87 @@
+{
+  "name": "옵티멈스터디카페",
+  "branch": "신림대학점",
+  "address": "서울특별시 관악구 신림로15길 31 B1, 2~5층",
+  "address_short": "서울 관악구 신림동 1538-7",
+  "telephone": "0507-1365-5966",
+  "category": "스터디카페",
+  "business_hours": "24시간 연중무휴",
+  "slogan": "최적의 공간이 최상의 결과를 만든다! Optimum!",
+  "description": "신림동 최초 단독 건물형 스터디카페. 2층부터 5층까지 총 300평 220석 좌석으로 넉넉한 좌석이 준비되어 있으며, 좌석 하나하나의 크기 또한 와이드 책상으로 준비되어 있습니다. 365일 총 4명의 스텝들이 2시간에 한번씩 건물 전체를 점검하고 관리하며 쾌적하고 깨끗한 환경을 만들기 위해 노력하고 있습니다.",
+  "x": "126.9370588",
+  "y": "37.4687366",
+  "highlights": [
+    { "label": "총 면적", "value": "300평" },
+    { "label": "층수", "value": "5개층" },
+    { "label": "좌석수", "value": "220석" },
+    { "label": "운영시간", "value": "24시간" }
+  ],
+  "features": [
+    { "title": "24시간 연중무휴", "description": "언제든 원하는 시간에 공부할 수 있는 환경을 제공합니다." },
+    { "title": "300평 통건물", "description": "신림동 최대 규모의 단독 건물형 스터디카페입니다." },
+    { "title": "5개층 다양한 분위기", "description": "각 층마다 다른 분위기로 기분에 따라 자리를 선택할 수 있습니다." },
+    { "title": "와이드 책상", "description": "넉넉한 크기의 와이드 책상으로 쾌적하게 공부할 수 있습니다." },
+    { "title": "고급 안마의자", "description": "공부 중 휴식이 필요할 때 이용할 수 있는 안마의자를 제공합니다." },
+    { "title": "푸드존 & 무인매점", "description": "외부 음식 보관 냉장고, 전자레인지, 무인매점이 있습니다." }
+  ],
+  "facilities": [
+    "1~4인용 스터디룸",
+    "런닝머신 (피트니스 공간)",
+    "고급 안마의자",
+    "다이닝 공간 (냉장고, 전자레인지)",
+    "무인매점",
+    "휴식 공간",
+    "와이드 책상",
+    "Wi-Fi",
+    "프린터",
+    "개인 사물함"
+  ],
+  "floors": [
+    { "floor": "B1", "description": "편의시설 & 휴식공간" },
+    { "floor": "2F", "description": "오픈형 열람실" },
+    { "floor": "3F", "description": "집중 열람실" },
+    { "floor": "4F", "description": "프리미엄 열람실" },
+    { "floor": "5F", "description": "스터디룸 & 라운지" }
+  ],
+  "price_info": [],
+  "directions": {
+    "subway": "서울대벤처타운역 도보 7분",
+    "address_detail": "서울특별시 관악구 신림로15길 31 B1, 2~5층"
+  },
+  "place_id": "1333416518",
+  "naver_place_url": "https://map.naver.com/p/entry/place/1333416518",
+  "kakao_channel": "https://pf.kakao.com/_vxgxjIn",
+  "blog_url": "https://blog.naver.com/optimumstudycafe",
+  "instagram": "https://www.instagram.com/opt_studycafe/",
+  "hero_images": [
+    "/images/naver/photo-01.jpg",
+    "/images/naver/photo-02.jpg",
+    "/images/naver/photo-03.jpg"
+  ],
+  "gallery": [
+    { "src": "/images/naver/photo-04.jpg", "label": "매장 내부 1" },
+    { "src": "/images/naver/photo-05.jpg", "label": "매장 내부 2" },
+    { "src": "/images/naver/photo-06.jpg", "label": "매장 내부 3" },
+    { "src": "/images/naver/photo-07.jpg", "label": "매장 내부 4" },
+    { "src": "/images/naver/photo-08.jpg", "label": "매장 내부 5" },
+    { "src": "/images/naver/photo-09.jpg", "label": "매장 내부 6" },
+    { "src": "/images/naver/photo-10.jpg", "label": "매장 내부 7" },
+    { "src": "/images/naver/photo-11.jpg", "label": "매장 내부 8" },
+    { "src": "/images/naver/photo-12.jpg", "label": "매장 내부 9" },
+    { "src": "/images/naver/photo-13.jpg", "label": "매장 내부 10" },
+    { "src": "/images/naver/photo-14.jpg", "label": "매장 내부 11" },
+    { "src": "/images/naver/photo-15.jpg", "label": "매장 내부 12" },
+    { "src": "/images/naver/photo-16.jpg", "label": "매장 내부 13" },
+    { "src": "/images/naver/photo-17.jpg", "label": "매장 내부 14" },
+    { "src": "/images/naver/photo-18.jpg", "label": "매장 내부 15" },
+    { "src": "/images/naver/photo-19.jpg", "label": "매장 내부 16" },
+    { "src": "/images/naver/photo-20.jpg", "label": "매장 내부 17" },
+    { "src": "/images/naver/photo-21.jpg", "label": "매장 내부 18" },
+    { "src": "/images/naver/photo-22.jpg", "label": "매장 내부 19" },
+    { "src": "/images/naver/photo-23.jpg", "label": "매장 내부 20" },
+    { "src": "/images/naver/photo-24.jpg", "label": "매장 내부 21" },
+    { "src": "/images/naver/photo-25.jpg", "label": "매장 내부 22" }
+  ],
+  "images": [],
+  "fetchedAt": "2026-04-09T10:53:00.000Z"
+}

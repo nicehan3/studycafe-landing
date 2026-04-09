@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #1B2F6E;
+  --navy-light: #2A4199;
+  --navy-dark: #0F1D4A;
+  --yellow: #FFD700;
+  --yellow-light: #FFE44D;
+  --white: #FFFFFF;
+  --gray-50: #F9FAFB;
+  --gray-100: #F3F4F6;
+  --gray-200: #E5E7EB;
+  --gray-500: #6B7280;
+  --gray-700: #374151;
+  --gray-900: #111827;
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-navy-light: var(--navy-light);
+  --color-navy-dark: var(--navy-dark);
+  --color-yellow: var(--yellow);
+  --color-yellow-light: var(--yellow-light);
+  --font-sans: var(--font-noto-sans-kr);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent fixed header from covering section headings on anchor jumps */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+body {
+  font-family: var(--font-noto-sans-kr), "Noto Sans KR", sans-serif;
+  color: var(--gray-900);
+  background: var(--white);
+}
+
+/* Skip to content (visually hidden until focused) */
+.skip-link {
+  position: fixed;
+  top: -100px;
+  left: 16px;
+  z-index: 100;
+  background: var(--navy);
+  color: var(--yellow);
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 16px;
+  outline: 2px solid var(--yellow);
+  outline-offset: 2px;
+}
+
+/* Floating action buttons stack */
+.fab-stack {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.fab {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+  transition: transform 0.2s, box-shadow 0.2s, opacity 0.3s;
+  position: relative;
+}
+.fab:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.24);
+}
+.fab-kakao { background: #FEE500; }
+.fab-phone { background: var(--navy); }
+.fab-top   { background: rgba(27,47,110,0.9); color: #fff; }
+
+/* FAB tooltip */
+.fab[data-tooltip]::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  right: calc(100% + 10px);
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(15, 29, 74, 0.92);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+.fab:hover[data-tooltip]::before { opacity: 1; }
+
+/* Scroll-to-top hidden state */
+.fab-top.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+}
+
+/* Loading shimmer for iframe */
+.iframe-shimmer {
+  background: linear-gradient(110deg, #f3f4f6 8%, #e5e7eb 18%, #f3f4f6 33%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s linear infinite;
+}
+@keyframes shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Dot grid decoration */
+.dot-grid {
+  background-image: radial-gradient(rgba(27,47,110,0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Lock body scroll when modal open */
+body.no-scroll { overflow: hidden; }
+
+/* Section fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
